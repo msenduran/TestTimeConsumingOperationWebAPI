@@ -1,7 +1,9 @@
 <Solution>
   <Project Path="../TestClientAsyncUWP/TestClientAsyncUWP/TestClientAsyncUWP.csproj" Id="18b49609-5b0c-42cc-a55a-76bd19e59a66">
     <Platform Project="x64" />
-    <Deploy />
+    <Deploy Solution="Release|*" />
   </Project>
-  <Project Path="TestTimeConsumingOperationWebAPI/TestTimeConsumingOperationWebAPI.csproj" />
+  <Project Path="TestTimeConsumingOperationWebAPI/TestTimeConsumingOperationWebAPI.csproj">
+    <BuildDependency Project="../TestClientAsyncUWP/TestClientAsyncUWP/TestClientAsyncUWP.csproj" />
+  </Project>
 </Solution>
